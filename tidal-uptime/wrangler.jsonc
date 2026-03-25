@@ -14,12 +14,29 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
-	"kv_namespaces": [
-		{
-			"binding": "STATUS_STORE",
-			"id": "tidal-uptime"
-		}
-	]
+	"env": {
+    // --- ENVIRONMENT 1 (e.g., your first worker) ---
+    "worker_one": {
+      "name": "my-app-worker-one", // The name it will have in your CF dashboard
+      "kv_namespaces": [
+        {
+          "binding": "STATUS_STORE", // How you reference it in your code: env.MY_KV
+          "id": "d65f8103d8af4fd6962c023608aa2307"
+        }
+      ]
+    },
+
+    // --- ENVIRONMENT 2 (e.g., your second worker) ---
+    "worker_two": {
+      "name": "my-app-worker-two",
+      "kv_namespaces": [
+        {
+          "binding": "STATUS_STORE", 
+          "id": "put-the-kv-id-for-worker-two-here"
+        }
+      ]
+    }
+  }
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
