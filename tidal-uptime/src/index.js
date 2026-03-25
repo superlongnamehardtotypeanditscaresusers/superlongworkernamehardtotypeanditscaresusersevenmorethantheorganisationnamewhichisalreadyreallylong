@@ -210,16 +210,21 @@ async function checkSingleApi(baseUrl) {
     trackData = await trackResponse.json();
     res.canStream = trackData?.data?.assetPresentation === "FULL";
     res.version = trackData?.version || "0.0";
-    if (res.canStream) { res.canSearch = true; return res; }
+    if (res.canStream) { res.canSearch = true; }
   } else {
     res.lastStatus = trackResponse?.status || 504;
     res.lastError = "Track unreachable";
   }
-  const searchResponse = await fetchWithRetry(`${cleanUrl}/search?s=${encodeURIComponent(SEARCH_QUERY)}`);
-  if (searchResponse && searchResponse.ok) {
-    const searchData = await searchResponse.json();
-    res.canSearch = !!(searchData?.data?.items);
-    if (res.version === "0.0") res.version = searchData?.version || "0.0";
+  if (!res.canStream) {
+    const searchResponse = await fetchWithRetry(`${cleanUrl}/search?s=${encodeURIComponent(SEARCH_QUERY)}`);
+    if (searchResponse && searchResponse.ok) {
+      const searchData = await searchResponse.json();
+      res.canSearch = !!(searchData?.data?.items);
+      if (res.version === "0.0") res.version = searchData?.version || "0.0";
+    }
+  }
+  if (baseUrl.endsWith(".qqdl.site")) {
+    res.version = "2.6";
   }
   return res;
 }
