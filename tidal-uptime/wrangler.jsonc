@@ -32,7 +32,7 @@
       "kv_namespaces": [
         {
           "binding": "STATUS_STORE", 
-          "id": "put-the-kv-id-for-worker-two-here"
+          "id": "aefb6a29edfa4ecca780cc4d6b1a9de6"
         }
       ]
     }
