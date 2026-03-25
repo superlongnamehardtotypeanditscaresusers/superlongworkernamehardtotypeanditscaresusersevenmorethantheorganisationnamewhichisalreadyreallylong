@@ -7,7 +7,7 @@ const API_LIST = [
   "https://hund.qqdl.site", "https://tidal.kinoplus.online",
   "https://hifi-one.spotisaver.net", "https://hifi-two.spotisaver.net",
   "https://ohio-1.monochrome.tf", "https://singapore-1.monochrome.tf",
-  "https://frankfurt-1.monochrome.tf"
+  "https://frankfurt-1.monochrome.tf", "https://hifi.geeked.wtf"
 ];
 
 const SEARCH_QUERY = "Beyoncé";
