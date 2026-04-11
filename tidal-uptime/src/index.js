@@ -1,13 +1,13 @@
 const API_LIST = [
   "https://eu-central.monochrome.tf", "https://us-west.monochrome.tf",
-  "https://arran.monochrome.tf", "https://api.monochrome.tf",
-  "https://monochrome-api.samidy.com", "https://triton.squid.wtf",
+  "https://api.monochrome.tf", "https://monochrome-api.samidy.com", 
+	"https://triton.squid.wtf",
   "https://wolf.qqdl.site", "https://maus.qqdl.site",
-  "https://vogel.qqdl.site", "https://katze.qqdl.site",
-  "https://hund.qqdl.site", "https://tidal.kinoplus.online",
-  "https://hifi-one.spotisaver.net", "https://hifi-two.spotisaver.net",
+  "https://vogel.qqdl.site", "https://katze.qqdl.site", "https://hund.qqdl.site", 
+	"https://hifi-one.spotisaver.net", "https://hifi-two.spotisaver.net",
   "https://ohio-1.monochrome.tf", "https://singapore-1.monochrome.tf",
-  "https://frankfurt-1.monochrome.tf", "https://hifi.geeked.wtf"
+  "https://frankfurt-1.monochrome.tf", "https://hifi.geeked.wtf", 
+	"https://hfapi.dyamuh.dev", "https://hfapi.aluratech.org", "https://api.studentsneed.help"
 ];
 
 const SEARCH_QUERY = "Beyoncé";
