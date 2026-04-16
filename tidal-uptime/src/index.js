@@ -5,8 +5,7 @@ const API_LIST = [
   "https://wolf.qqdl.site", "https://maus.qqdl.site",
   "https://vogel.qqdl.site", "https://katze.qqdl.site", "https://hund.qqdl.site", 
 	"https://hifi-one.spotisaver.net", "https://hifi-two.spotisaver.net",
-  "https://ohio-1.monochrome.tf", "https://singapore-1.monochrome.tf",
-  "https://frankfurt-1.monochrome.tf", "https://hifi.geeked.wtf", 
+   "https://hifi.geeked.wtf", 
 	"https://hfapi.dyamuh.dev", "https://hfapi.aluratech.org", "https://api.studentsneed.help"
 ];
 
