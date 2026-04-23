@@ -35,6 +35,15 @@
           "id": "aefb6a29edfa4ecca780cc4d6b1a9de6"
         }
       ]
+    },
+	"worker_three": {
+      "name": "api-uptime-worker",
+      "kv_namespaces": [
+        {
+          "binding": "STATUS_STORE", 
+          "id": "aa3e7fdb0bcd47fcbf2ab855fa7b3259"
+        }
+      ]
     }
   }
 	/**
